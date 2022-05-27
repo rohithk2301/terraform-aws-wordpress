@@ -1,5 +1,5 @@
 provider "aws" {
-  region = var.aws_reg
+  region = var.aws_ap-south-1
   # version = "2.12.0"
   profile = "terraform"
 }
