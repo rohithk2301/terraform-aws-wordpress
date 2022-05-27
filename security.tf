@@ -25,7 +25,7 @@ resource aws_security_group "mysql" {
 resource aws_security_group "web" {
   name        = "${var.stack}-webSG"
   description = "This is for ${var.stack}s web servers security group"
-  vpc_id      = "${aws_vpc.vpc.id}"
+  vpc_id      = "${aws_vpc.public.id}"
 
   tags = {
     Name = "${var.stack}-webSG"
